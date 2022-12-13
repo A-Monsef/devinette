@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class=container>
+        <div class=containerEntrerNom id="auth">
+            <form>
+                <input type="email" placeholder="eve.holt@reqres.in" name="username" id="username">
+                <input type="password" name="password" placeholder="password" id="password">
+                <button id="validation" type="button">valider</button>
+            </form>
+        </div>
+        <div id="interfacegame">
+            <div class=gamerNameScore>
+                <div>
+                    <span><i class="bi bi-person-bounding-box"></i></span>
+                    <span id="gamerName"></span>
+                </div>
+                <div>
+                    <span>Score :</span>
+                    <span id="gamerScore"></span>
+                </div>
+            </div>
+            <div class=level>
+                <span>NIVEAUX :</span>
+
+                <input class="level" id="easy" type="radio" name="level" value="easy" onchange="levelFacile()">
+
+                <label for="easy">facile</label>
+
+                <input class="level" id="medium" type="radio" name="level" onchange="levelMoyen()">
+
+                <label for="medium">moyen</label>
+
+                <input class="level" id="difficult" type="radio" name="level" onchange="levelDifficile()">
+
+                <label for="difficult">difficile</label>
+            </div>
+            <div class="message">
+                <p id="paraInit">Selectionnez un niveau avant de commencer!</p>
+                <p id="paraMain"></p>
+                <p id="paraPoint"></p>
+                <p id="paraTrial"></p>
+                <P id="trialMessage"></P>
+            </div>
+            <form>
+                <input id="numInput" type="number" placeholder="nombre">
+
+                <button type="button" id="btnValider">valider</button>
+            </form>
+        </div>
+        <div class="result">
+            <p id="gameMessage" style="color: green;">Bravo vous avez gagné</p>
+            <p id="playAgain"> voulez vous une autre fois ?</p>
+            <div class="continueButton">
+                <button id="btnResultOui">oui</button>
+                <button id="btnResultNon">non</button>
+            </div>
+        </div>
+        <div id="bye">
+            <p style="color: red;">désole vous avez perdu au revoir! <span></span></p>
+            <p>voter score est : 0 <span></span></p>
+            <button id="btnOui">oui</button>
+            <button id="btnNon">non</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

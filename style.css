@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'DS-Digital';
+    src: url('fonts/DS-DIGI.TTF');
+}
+*{
+    font-family: 'DS-Digital';
+    letter-spacing: 1px;
+    color: #CCFF00;
+    font-size: 18px;
+    box-sizing: border-box;
+    background-color: black;
+}
+.container{
+    text-align: center;
+}
+#interfacegame{
+    padding-top: 20px;
+    width: 40%;
+    margin: auto;
+}
+input{
+    color: black;
+    background-color: lightgrey;
+}
+.gamerNameScore{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: auto;
+}
+.level{
+    margin: 40px 0;
+}
+button{
+    background-color: gray;
+}
+.message + form {
+  margin-top: 50px;
+}
+#interfacegame{
+    display: none;
+}
+.result{
+    display: none;
+}
+#bye{
+    display: none;
+}
